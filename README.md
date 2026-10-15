@@ -1,3 +1,7 @@
+![Uploading banner.png…]()
+<img width="1240" height="244" alt="announcement" src="https://github.com/user-attachments/assets/b3d66fdb-cb5e-44a0-a99d-27f73e68ff6a" />
+<img width="1240" height="244" alt="restart" src="https://github.com/user-attachments/assets/3c26d6a1-097f-40d6-b053-48bb2326c47b" />
+<img width="1600" height="900" alt="banner" src="https://github.com/user-attachments/assets/eae52050-c675-4e50-8f6b-e7e3247ef27d" />
 <p align="center">
   <img src="previews/banner.png" alt="mazilkata-announcement - NPV Inspired Announcement System" width="100%">
 </p>
