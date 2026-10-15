@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-800i-latin-ext.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-800i-latin.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-500-latin-ext.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-500-latin.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Cyr';
+  src: url('fonts/RobotoCondensed-700i-cyrillic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Cyr';
+  src: url('fonts/RobotoCondensed-400-cyrillic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+:root {
+  --s: 1;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+}
+
+#stage {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 604px;
+  margin-left: -302px;
+  transform: scale(var(--s));
+  transform-origin: top center;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.notice {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 604px;
+  opacity: 0;
+  transform: translateY(-16px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  z-index: 999999;
+}
+
+.notice.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.head {
+  position: relative;
+  box-sizing: border-box;
+  height: 46px;
+  padding: 0 52px;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 43px;
+  background: repeating-linear-gradient(180deg, #202020 0, #202020 1px, #0c0c0c 1px, #0c0c0c 3px);
+}
+
+.cap-left {
+  left: 0;
+}
+
+.cap-right {
+  right: 0;
+}
+
+.title {
+  font-family: 'Barlow Condensed', 'Roboto Condensed Cyr', 'Arial Narrow', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 23.7px;
+  line-height: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  padding: 0 2px 0 0;
+}
+
+.body {
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 9px 30px 9px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Barlow Condensed', 'Roboto Condensed Cyr', 'Arial Narrow', sans-serif;
+  font-weight: 500;
+  font-size: 20.05px;
+  line-height: 22px;
+  color: #000000;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
