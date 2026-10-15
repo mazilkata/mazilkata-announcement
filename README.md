@@ -11,12 +11,6 @@
 **NPV Inspired Announcement System** for FiveM by **Mazilkata Development**.
 Replaces the default txAdmin **restart warnings** and **announcements** with a clean black-and-white notice at the top of the screen. Standalone: no framework, no ox_lib, no build step.
 
-<p align="center">
-  <img src="previews/restart.png" alt="Restart notice" width="640"><br>
-  <img src="previews/announcement.png" alt="Announcement" width="640"><br>
-  <img src="previews/announcement-long.png" alt="Long announcement" width="640">
-</p>
-
 ---
 
 ## Features
